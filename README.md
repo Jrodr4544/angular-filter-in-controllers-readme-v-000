@@ -1,0 +1,1 @@
+# angular-filter-in-controllers-readme
