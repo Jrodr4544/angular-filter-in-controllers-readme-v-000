@@ -99,7 +99,7 @@ Now we have a filtered list in our `filteredList`. We will then change the `ng-r
 </ul>
 ```
 
-Notice how we don't use a filter in our `ng-repeat` anymore?
+Notice how we don't use a filter in our `ng-repeat` anymore, and it looks a lot neater? Having the filter in the controller allows us to know exactly what our data is going to be when we look at the controller, and it simplifies the view.
 
 Now we need to update the filter when the `ctrl.search` value changes - we can do this using `ng-change`.
 
@@ -148,7 +148,7 @@ function ContactList($filter) {
 }
 ```
 
-Which can be refactored into:
+There's no need for us to explicity write the `$filter` call twice. We can just simply call the `refilter` function in the controller:
 
 ```js
 function ContactList($filter) {
