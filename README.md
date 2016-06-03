@@ -22,7 +22,7 @@ When we use a filter on an `ng-repeat`, such as:
 </ul>
 ```
 
-Everytime that our digest cycle is ran, our filter is re-ran, even if there are no changes to the `ctrl.search` value. This means there are pointless recalculations done by Angular.
+Everytime that our digest cycle is run, our filter is re-run, even if there are no changes to the `ctrl.search` value. This means there are pointless recalculations done by Angular.
 
 One way that we can stop this is by actually filtering on the `ctrl.contacts` array in our controller. We can then control *when* we filter on the list.
 
@@ -185,3 +185,4 @@ function ContactList($filter) {
 ```
 
 Awesome! Now our filter is in our controller, and is only updated when we want it to be!
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-filter-in-controllers-readme'>Using Filter In Controllers </a> on Learn.co and start learning to code for free.</p>
